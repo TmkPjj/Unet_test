@@ -12,7 +12,7 @@ if __name__=="__main__":
 
     # 构造数据集
     data = MyDataset('./data/train/')
-    train_loader = DataLoader(data, batch_size=2, shuffle=True)
+    train_loader = DataLoader(data, batch_size=1, shuffle=True)
 
     # 定义模型
     model = Unet().to(device)
